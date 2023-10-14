@@ -11,7 +11,10 @@
 		{/each}
 	</ul>
 	<form on:submit={handleSubmit}>
-		<input bind:value={$input} />
+		<label>
+			Say something...
+			<input bind:value={$input} />
+		</label>
 		<button type="submit">Send</button>
 	</form>
 </div>

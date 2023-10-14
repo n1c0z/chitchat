@@ -1,29 +1,27 @@
-// path: /api/chat/+server.ts
 import type { Config } from '@sveltejs/kit';
-import { PUBLIC_OPENAI_API_KEY } from '$env/static/public';
 import { StreamingTextResponse, LangChainStream } from 'ai';
 import { ChatOpenAI } from 'langchain/chat_models/openai';
 import { AIMessage, HumanMessage } from 'langchain/schema';
+import { OPENAI_API_KEY } from '$env/static/private';
 
 export const config: Config = {
 	runtime: 'edge'
 };
 
+//server endpoint for chatGpt Stream Chat
 export const POST = async ({ request }) => {
 	const { messages } = await request.json();
 	const { stream, handlers } = LangChainStream();
 
 	const llm = new ChatOpenAI({
 		streaming: true,
-		openAIApiKey: PUBLIC_OPENAI_API_KEY,
-  });
+		openAIApiKey: OPENAI_API_KEY
+	});
 
 	llm
 		.call(
-			messages.map((m) =>
-				m.role == 'user' ?
-				new HumanMessage(m.content)
-					: new AIMessage(m.content)
+			messages.map((m: any) =>
+				m.role == 'user' ? new HumanMessage(m.content) : new AIMessage(m.content)
 			),
 			{},
 			[handlers]
