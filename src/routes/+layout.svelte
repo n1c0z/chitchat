@@ -1,15 +1,7 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 </script>
 
-<div
-	class="flex
-flex-col
-justify-center
-items-center
-bg-gradient-to-r
-h-full
-w-full"
->
+<div class="flex flex-col justify-center items-center max-w-2xl mx-auto h-full">
 	<slot />
 </div>

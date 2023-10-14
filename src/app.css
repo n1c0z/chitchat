@@ -4,15 +4,14 @@
 @tailwind utilities;
 
 :root {
-	background-color: rgb(11, 15, 48);
-	color: white;
+	background-color: #7777ff;
 }
 
 body {
 	@apply h-screen;
 	@apply w-screen;
 	margin: 0;
-	background: radial-gradient(farthest-side at bottom left, rgba(68, 0, 68, 0.5), transparent 80%),
-		radial-gradient(farthest-corner at bottom right, rgba(92, 51, 0, 0.5), transparent 80%),
-		radial-gradient(farthest-corner at top right, rgba(0, 75, 59, 0.5), transparent 80%);
+	background: radial-gradient(farthest-side at bottom left, rgba(182, 0, 182, 0.5), transparent 80%),
+		radial-gradient(farthest-corner at bottom right, rgba(209, 115, 0, 0.5), transparent 80%),
+		radial-gradient(farthest-corner at top right, rgba(0, 214, 168, 0.5), transparent 80%);
 }
