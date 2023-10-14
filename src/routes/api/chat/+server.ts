@@ -1,5 +1,4 @@
 import type { Config } from '@sveltejs/kit';
-import type { ChatCompletionRequestMessage } from 'openai';
 import { StreamingTextResponse, LangChainStream } from 'ai';
 import { ChatOpenAI } from 'langchain/chat_models/openai';
 import { AIMessage, HumanMessage } from 'langchain/schema';
@@ -23,7 +22,7 @@ export const POST = async ({ request }) => {
 			throw new Error('No request data');
 		}
 
-		const messages: ChatCompletionRequestMessage[] = requestData.messages;
+		const messages = requestData.messages;
 
 		if (!messages) {
 			throw new Error('no messages provided');
@@ -38,6 +37,7 @@ export const POST = async ({ request }) => {
 
 		llm
 			.call(
+				// eslint-disable-next-line @typescript-eslint/no-explicit-any
 				messages.map((m: any) =>
 					m.role == 'user' ? new HumanMessage(m.content) : new AIMessage(m.content)
 				),

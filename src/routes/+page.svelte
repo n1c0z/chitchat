@@ -1,4 +1,3 @@
-<!-- src/routes/+page.svelte -->
 <script lang="ts">
 	import { useChat } from 'ai/svelte';
 	import Bubble from '$lib/components/Bubble.svelte';
