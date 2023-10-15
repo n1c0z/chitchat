@@ -15,3 +15,7 @@ body {
 		radial-gradient(farthest-corner at bottom right, rgba(209, 115, 0, 0.5), transparent 80%),
 		radial-gradient(farthest-corner at top right, rgba(0, 214, 168, 0.5), transparent 80%);
 }
+
+#zone {
+	height: auto !important;
+}

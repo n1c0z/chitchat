@@ -1,0 +1,157 @@
+[
+	[
+		"0",
+		{
+			"pageContent": "id: 2\nfirst_name: 1\nlast_name: Vinnie\nemail: Mound\ngender: vmound0@wp.com\nreview: Female\n: 3",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"1",
+		{
+			"pageContent": "id: 3\nfirst_name: 2\nlast_name: Pincas\nemail: Yusupov\ngender: pyusupov1@abc.net.au\nreview: Male\n: 8",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"2",
+		{
+			"pageContent": "id: 4\nfirst_name: 3\nlast_name: Preston\nemail: Ottewill\ngender: pottewill2@1688.com\nreview: Male\n: 10",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"3",
+		{
+			"pageContent": "id: 5\nfirst_name: 4\nlast_name: Melonie\nemail: Pidgeon\ngender: mpidgeon3@unesco.org\nreview: Female\n: 9",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"4",
+		{
+			"pageContent": "id: 6\nfirst_name: 5\nlast_name: Matthew\nemail: McBoyle\ngender: mmcboyle4@drupal.org\nreview: Male\n: 1",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"5",
+		{
+			"pageContent": "id: 7\nfirst_name: 6\nlast_name: Christine\nemail: Tyer\ngender: ctyer5@diigo.com\nreview: Non-binary\n: 2",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"6",
+		{
+			"pageContent": "id: 8\nfirst_name: 7\nlast_name: Adriaens\nemail: Aspel\ngender: aaspel6@virginia.edu\nreview: Female\n: 2",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"7",
+		{
+			"pageContent": "id: 9\nfirst_name: 8\nlast_name: Alard\nemail: Alberts\ngender: aalberts7@dmoz.org\nreview: Male\n: 5",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"8",
+		{
+			"pageContent": "id: 10\nfirst_name: 9\nlast_name: Parsifal\nemail: Bazley\ngender: pbazley8@addthis.com\nreview: Male\n: 3",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"9",
+		{
+			"pageContent": "id: 11\nfirst_name: 10\nlast_name: Elihu\nemail: Bottrell\ngender: ebottrell9@digg.com\nreview: Non-binary\n: 7",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 7 } } }
+		}
+	],
+	[
+		"10",
+		{
+			"pageContent": "Langchain is a library for working with language models. It provides an easy-to-use interface for tasks such as document retrieval, text embeddings, and question-answering. Langchain is designed to help developers integrate language models into their applications and leverage the power of modern AI models.",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	["11", { "pageContent": "Chatbots", "metadata": { "loc": { "lines": { "from": 1, "to": 1 } } } }],
+	[
+		"12",
+		{
+			"pageContent": "Langchain can be used to build chatbots that understand natural language queries and provide intelligent and contextually relevant responses to users.",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	[
+		"13",
+		{
+			"pageContent": "Content Generation",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	[
+		"14",
+		{
+			"pageContent": "Langchain can generate coherent and contextually relevant text, making it suitable for content generation tasks such as article writing, social media posts, and creative writing.",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	[
+		"15",
+		{
+			"pageContent": "Sentiment Analysis",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	[
+		"16",
+		{
+			"pageContent": "Langchain can analyze the sentiment of text, allowing developers to build applications that understand the emotions and opinions expressed in text, such as customer reviews and social media comments.",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	[
+		"17",
+		{
+			"pageContent": "Language Translation",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	[
+		"18",
+		{
+			"pageContent": "Langchain can be used for language translation tasks, enabling the translation of text from one language to another, which is useful for multilingual applications and global communication.",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	[
+		"19",
+		{
+			"pageContent": "Information Retrieval",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	[
+		"20",
+		{
+			"pageContent": "Langchain's document retrieval capabilities make it ideal for building information retrieval systems and search engines that can quickly find relevant documents based on user queries.",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 1 } } }
+		}
+	],
+	[
+		"21",
+		{
+			"pageContent": "Langchain is a powerful library for working with language models. Some of its key features include:\n\n- Document Retrieval: Langchain allows you to retrieve relevant documents based on a given query. This feature is useful for building search engines and information retrieval systems.\n\n- Text Embeddings: Langchain can generate vector representations (embeddings) of text. These embeddings capture the semantic meaning of the text and can be used for tasks such as text classification and clustering.\n\n- Question-Answering: Langchain provides a question-answering functionality that can answer questions based on a set of documents. This feature is valuable for building intelligent chatbots and virtual assistants.\n\n- Support for Multiple File Formats: Langchain supports loading documents from various file formats, including JSON, CSV, TXT, and PDF. This flexibility makes it easy to work with different types of data.",
+			"metadata": { "loc": { "lines": { "from": 1, "to": 9 } } }
+		}
+	],
+	[
+		"22",
+		{
+			"pageContent": "- Text Embeddings: Langchain can generate vector representations (embeddings) of text. These embeddings capture the semantic meaning of the text and can be used for tasks such as text classification and clustering.\n\n- Question-Answering: Langchain provides a question-answering functionality that can answer questions based on a set of documents. This feature is valuable for building intelligent chatbots and virtual assistants.\n\n- Support for Multiple File Formats: Langchain supports loading documents from various file formats, including JSON, CSV, TXT, and PDF. This flexibility makes it easy to work with different types of data.\n\n- Vector Store: Langchain allows you to create and manage vector stores, which are collections of vector embeddings. Vector stores can be used for efficient similarity search and retrieval.",
+			"metadata": { "loc": { "lines": { "from": 5, "to": 11 } } }
+		}
+	]
+]

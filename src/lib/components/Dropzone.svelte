@@ -1,41 +1,27 @@
-<script lang="ts">
-	import DropFile from 'svelte-parts/DropFile.svelte';
-
-	let fileOver = false;
-
-	const onDrop = (files: File[]) => {
-		alert(`Files: ${files.map((d) => d.name).join(', ')}`);
-		fileOver = false;
-	};
-</script>
-
-<DropFile {onDrop} onEnter={() => (fileOver = true)} onLeave={() => (fileOver = false)}>
-	<label
-		class="flex justify-center w-full h-20 bg-black bg-opacity-70 transition rounded-md cursor-pointer focus:outline-none"
+<form
+	class="w-full flex justify-between bg-black bg-opacity-70 rounded-md gap-4 p-5"
+	method="post"
+	enctype="multipart/form-data"
+>
+	<input
+		class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-200 focus:outline-none dark:bg-zinc-900 dark:border-zinc-700 dark:placeholder-gray-200"
+		id="file_input"
+		type="file"
+	/>
+	<button
+		class="btn btn-accent shadow bg-teal-700 hover:bg-teal-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+		>Upload</button
 	>
-		<span class="flex items-center space-x-2">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				class="w-6 h-6 text-white"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-				stroke-width="2"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
-				/>
-			</svg>
-			<span class="font-medium text-white">
-				Drop files to Attach, or
-				<span class="text-purple-400 underline">browse</span>
-			</span>
-		</span>
-		<input type="file" name="file_upload" class="hidden" />
-	</label>
-</DropFile>
+</form>
 
 <style>
+	input::file-selector-button {
+		font-weight: bold;
+		color: white;
+		padding: 0.5rem 1rem;
+		border: thin solid #1d4ed8;
+		border-radius: 3px;
+		background-color: #1d4ed8;
+		margin-right: 1em;
+	}
 </style>
