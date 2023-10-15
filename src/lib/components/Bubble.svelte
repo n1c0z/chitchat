@@ -4,13 +4,20 @@
 </script>
 
 <div class="chat {type === 'user' ? 'chat-end' : 'chat-start'} justify-end">
-	<div class="chat-image avatar">
-		<div class="w-10 rounded-full">
-			<img
-				src="https://ui-avatars.com/api/?name={type === 'user' ? 'Me' : 'CC'}"
-				alt="{type} avatar"
-			/>
-		</div>
+	<div class="chat-image">
+		{#if type === 'user'}
+			<div
+				class="avatar w-10 rounded-full bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+			>
+				me
+			</div>
+		{:else}
+			<div
+				class="avatar w-10 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
+			>
+				ai
+			</div>
+		{/if}
 	</div>
 	<div class="chat-bubble {type === 'user' ? 'bg-emerald-900' : 'bg-rose-900'}">
 		{message}
@@ -30,15 +37,20 @@
 	.chat-image {
 		grid-row: span 2 / span 2;
 		align-self: flex-end;
-	}
-	.avatar {
 		position: relative;
 		display: inline-flex;
 	}
-	.avatar > div {
+	.avatar {
 		display: block;
 		aspect-ratio: 1 / 1;
 		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 600;
+		font-size: 1.25em;
+		color: lightyellow;
+		letter-spacing: 1px;
 	}
 
 	.chat-start {
