@@ -1,22 +1,24 @@
-# create-svelte
+# Demo
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Live version of the project with the latest updates can be seen at [`this link`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
+## Clone project
 
-If you're seeing this, you've probably already done this step. Congrats!
+Clone the project to your local enviroment by running the following command:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+git clone https://github.com/n1c0z/chitchat.git
+```
 
-# create a new project in my-app
-npm create svelte@latest my-app
+Navigate to the project directory and install all the required libraries with `npm install` (or `pnpm install` or `yarn`):
+
+```bash
+npm install
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've installed all required dependencies, start a development server:
 
 ```bash
 npm run dev
