@@ -1,6 +1,6 @@
 # Demo
 
-Live version of the project with the latest updates can be seen at [`this link`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Live version of the project with the latest updates can be seen at [`this link`](https://chitchat-sooty.vercel.app/).
 
 ## Clone project
 
