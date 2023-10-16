@@ -1,20 +1,31 @@
-import { writeFile } from 'node:fs/promises';
+import { fail } from '@sveltejs/kit';
+import { writeFileSync } from 'fs';
 import { extname } from 'path';
 
 export const actions = {
 	default: async ({ request }) => {
-		try {
-			const formData = await request.formData();
-			console.log('🚀 ~ file: +page.server.ts:8 ~ default: ~ formData:', formData);
-			const uploadedFile = formData?.get('file');
-			console.log('🚀 ~ file: +page.server.ts:9 ~ default: ~ uploadedFile:', uploadedFile);
-			const filename = `uploads/${crypto.randomUUID()}${extname(uploadedFile?.name)}`;
-			await writeFile(filename, Buffer.from(await uploadedFile?.arrayBuffer()));
-			console.log('🚀 ~ file: +page.server.ts:11 ~ default: ~ filename:', filename);
-			return { success: true };
-		} catch (err) {
-			console.log('🚀 ~ file: +page.server.ts:16 ~ default: ~ err:', err);
-			return { success: false };
+		const formData = Object.fromEntries(await request.formData());
+
+		if (
+			!(formData.fileToUpload as File).name ||
+			(formData.fileToUpload as File).name === 'undefined'
+		) {
+			return fail(400, {
+				error: true,
+				message: 'You must provide a file to upload'
+			});
 		}
+
+		const { fileToUpload } = formData as { fileToUpload: File };
+
+		// Write the file to the uploads folder
+		writeFileSync(
+			`uploads/${crypto.randomUUID()}${extname(fileToUpload?.name)}`,
+			Buffer.from(await fileToUpload.arrayBuffer())
+		);
+
+		return {
+			success: true
+		};
 	}
 };
